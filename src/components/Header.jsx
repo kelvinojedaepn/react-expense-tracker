@@ -1,10 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import {useGlobalState} from '../context/GlobalState'
 
 function Header() {
 
   return <>
-      <div>Header</div>
+      <h1 className='text-4xl font-bold'>Expense tracker</h1>
   </>
 }
 
