@@ -1,4 +1,5 @@
 import Balance from "./components/Balance.jsx"
+import ExpenseChart from "./components/ExpenseChart.jsx"
 import Header from "./components/Header.jsx"
 import IncomeExpenses from "./components/IncomeExpenses.jsx"
 import TransactionForm from "./components/transactions/TransactionForm.jsx"
@@ -9,7 +10,7 @@ function App() {
   return (
     <GlobalProvider>
       <div className="bg-zinc-900 text-white h-screen flex justify-center items-center">
-        <div className="mx-auto container w-2/6">
+        <div className="mx-auto container w-3/6">
           <div className="bg-zinc-800 rounded-lg p-10 flex gap-x-2">
             <div>
               <Header />
@@ -17,7 +18,8 @@ function App() {
               <Balance />
               <TransactionForm />
             </div>
-            <div className="w-full">
+            <div className="flex flex-col">
+              <ExpenseChart/>
               <TransactionList />
             </div>
           </div>
